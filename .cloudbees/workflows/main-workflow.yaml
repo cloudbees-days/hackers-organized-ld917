@@ -178,7 +178,7 @@ jobs:
       - uses: cloudbees-days/setup-kubeconfig
         name: Set kubeconfig
         with:
-          secname: ${{ secrets.kubeconfig }}
+          kubeconfig: ${{ secrets.kubeconfig }}
       - id: install-chart
         name: Install helm chart
         uses: cloudbees-io/helm-install@v1
