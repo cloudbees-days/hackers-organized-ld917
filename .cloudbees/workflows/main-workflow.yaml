@@ -175,7 +175,7 @@ jobs:
     steps:
       - name: Checkout
         uses: cloudbees-io/checkout@v1
-      - uses: cloudbees-days/kubeconfig
+      - uses: cloudbees-days/setup-kubeconfig
         name: Set kubeconfig
         with:
           secname: ${{ secrets.kubeconfig }}
